@@ -2,10 +2,10 @@ AWSTemplateFormatVersion: 2010-09-09
 Description: Template for Local LLM environment
 Resources:
   MyEC2Instance:
-    Type: !Ref InstanceTypeParameter
+    Type: "AWS::EC2::Instance"
     Properties:
       ImageId: ami-013a28d7c2ea10269
-      InstanceType: 
+      InstanceType: !Ref InstanceTypeParameter
       KeyName: !Ref SSHKeyParameter
       BlockDeviceMappings:
         - DeviceName: /dev/xvda
@@ -14,6 +14,7 @@ Resources:
             Iops: 3000
             DeleteOnTermination: true
             VolumeSize: 30
+    DeletionPolicy: Retain
 Parameters:
   SSHKeyParameter:
     Type: AWS::EC2::KeyPair::KeyName
