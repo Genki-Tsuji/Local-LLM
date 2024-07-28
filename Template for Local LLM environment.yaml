@@ -13,7 +13,7 @@ Resources:
             VolumeType: gp3
             Iops: 3000
             DeleteOnTermination: true
-            VolumeSize: 30
+            VolumeSize: 60
     DeletionPolicy: Retain
 Parameters:
   SSHKeyParameter:
