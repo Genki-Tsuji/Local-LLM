@@ -7,3 +7,4 @@ xformers
 bitsandbytes
 sentence_transformers
 chromadb
+pypdf
