@@ -1,6 +1,13 @@
 # Local-LLM
+
+## Table of Contents  
+-- [Overview](#overview)  
+-- [Key Topics](#key-topics)  
+-- [How to install](#how-to-install)  
+
 ## Overview
 This repository provides instructions on setting up a local language model (LLM) environment with a focus on privacy, cost-efficiency, and learning. The instructions below will guide you through the process of installing an LLM and setting up a RAG (Retrieval-Augmented Generation) environment locally.
+
 ## Key Topics
 **1. Privacy:** To ensure that sensitive or private information is not disclosed by hosting the language model locally.
 
